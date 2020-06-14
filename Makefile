@@ -58,7 +58,7 @@ generate_swagger: ## Generate swagger definitions from the comments
 
 package: ## Package the html, css, js files etc
 	go get -u github.com/markbates/pkger/cmd/pkger
-	pkger -o web -include /web/static/ -include /web/templates/
+	pkger -include /web/static/ -include /web/templates/
 
 compress: ### Run upx on the generated binary in `build` directory
 	#echo "=================BEFORE================="

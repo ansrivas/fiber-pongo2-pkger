@@ -31,19 +31,22 @@ import (
 // RegisterRoutes registers all the routes associated with this application.
 func (app *App) RegisterRoutes(routes *routers.Routers) {
 
+	// Register swagger URL
+	app.Server.Use("/swagger", swagger.Handler) // default
+	// app.Server.Use("/swagger", swagger.New(swagger.Config{ // custom
+	// 	URL:         "http://example.com/doc.json",
+	// 	DeepLinking: false,
+	// }))
+
 	app.Server.Get("/", func(c *fiber.Ctx) {
 		c.Redirect(prepareRoutes(app.ProxyURL, "/ui/index.html"), fiber.StatusTemporaryRedirect)
 	})
-	app.Server.Use("/swagger", swagger.Handler)            // default
-	app.Server.Use("/swagger", swagger.New(swagger.Config{ // custom
-		URL:         "http://example.com/doc.json",
-		DeepLinking: false,
-	}))
 
 	app.Server.Get(prepareRoutes(app.ProxyURL, "/healthz"), routes.GetHandlerHealthz)
 
-	uiGroup := app.Server.Group("/ui")
+	uiGroup := app.Server.Group(prepareRoutes(app.ProxyURL, "/ui"))
 	{
-		uiGroup.Get(prepareRoutes(app.ProxyURL, "/index.html"), routes.GetIndexHTML)
+		// Note we are not passing prepareRoutes as we prefixed the proxy earlier
+		uiGroup.Get("/index.html", routes.GetIndexHTML)
 	}
 }

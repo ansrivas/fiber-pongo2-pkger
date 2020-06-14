@@ -93,7 +93,7 @@ var SwaggerInfo = swaggerInfo{
 	BasePath:    "/",
 	Schemes:     []string{},
 	Title:       "fiber-pongo2-pkger",
-	Description: "/fiber-pongo2-pkger swagger implementations",
+	Description: "fiber-pongo2-pkger swagger implementations",
 }
 
 type s struct{}

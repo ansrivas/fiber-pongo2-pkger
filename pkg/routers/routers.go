@@ -27,7 +27,7 @@ type Routers struct {
 
 // @title fiber-pongo2-pkger
 // @version 1.0
-// @description /fiber-pongo2-pkger swagger implementations
+// @description fiber-pongo2-pkger swagger implementations
 // @termsOfService http://swagger.io/terms/
 // @contact.name API Support
 // @contact.email fiber@swagger.io

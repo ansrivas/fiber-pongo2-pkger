@@ -14,7 +14,7 @@ info:
   contact:
     email: fiber@swagger.io
     name: API Support
-  description: /fiber-pongo2-pkger swagger implementations
+  description: fiber-pongo2-pkger swagger implementations
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html

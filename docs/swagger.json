@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "/fiber-pongo2-pkger swagger implementations",
+        "description": "fiber-pongo2-pkger swagger implementations",
         "title": "fiber-pongo2-pkger",
         "termsOfService": "http://swagger.io/terms/",
         "contact": {

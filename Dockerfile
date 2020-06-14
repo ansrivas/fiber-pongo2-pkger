@@ -4,7 +4,9 @@ ENV GOPROXY=https://proxy.golang.org
 
 RUN apt-get -y update \
     && apt-get install -y make git upx wget curl tar musl* \
-    && go get -u github.com/swaggo/swag/cmd/swag
+    && go get -u github.com/swaggo/swag/cmd/swag \
+    && go get -u github.com/markbates/pkger/cmd/pkger
+
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -15,6 +17,7 @@ ADD . /opt/src
 
 RUN export PATH=/go/bin:$PATH && \
     swag init --generalInfo pkg/routers/routers.go pkg/routers && \
+    pkger -include /web/static/ -include /web/templates/ && \
     CC=/usr/local/bin/musl-gcc CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o build/fiber-pongo2-pkger  -a -ldflags '-extldflags "-static" -s -w'  .
 
 RUN upx /opt/src/build/fiber-pongo2-pkger
