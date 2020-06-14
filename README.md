@@ -1,24 +1,23 @@
 fiber-pongo2-pkger:
 	---
 
-	This project can be used to ...
+A very simple template project with `fiber` and `pongo2` as template + `pkger` to package static assets. 
 
-	Install:
-	---
-	Clone the project and run ...
+Install:
+---
+Clone the project and run ...
 
-	Test:
-	---
-	To run the tests: ...
+Test:
+---
+To run the tests: ...
 
 
-	Usage:
-	---
+Usage:
+---
 
-	....
+....
 
-	Example:
-	---
+Example:
+---
 
-	...
-	
+...
