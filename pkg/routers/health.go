@@ -25,9 +25,17 @@ import (
 	"github.com/gofiber/fiber"
 )
 
+// GetHandlerHealthz godoc
+// @Summary Get the health status of application
+// @Description Get the health status of application
+// @Tags Health
+// @Produce  json
+// @Success 200 {object} Response
+// @Failure 500 {object} Response
+// @Router /healthz [get]
 // GetHandlerHealthz returns the health
 func (routers *Routers) GetHandlerHealthz(c *fiber.Ctx) {
 	empty := map[string]interface{}{}
-	SendJSON(c, fiber.StatusOK, "I am healthy", empty)
+	SendJSON(c, fiber.StatusOK, "Healthy", empty)
 	return
 }

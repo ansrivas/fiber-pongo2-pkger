@@ -21,33 +21,28 @@
 
 package routers
 
-import "github.com/gofiber/fiber"
+import (
+	"io/ioutil"
+	"net/http/httptest"
+	"strings"
+	"testing"
 
-// Response being sent out from the server
-type Response struct {
-	Status  int
-	Message string
-	Data    interface{}
-}
+	"github.com/gofiber/fiber"
+	"github.com/stretchr/testify/assert"
+)
 
-// SendJSON is a wrapper over exisiting json response of fiber
-func SendJSON(c *fiber.Ctx, statusCode int, message string, data interface{}) {
+func TestGetHandlerHealthz(t *testing.T) {
+	assert := assert.New(t)
+	api := fiber.New()
+	routers := New()
 
-	var resp interface{}
-	switch val := data.(type) {
+	api.Get("/healthz", routers.GetHandlerHealthz)
 
-	// Some concrete type in case you want to test against
-	// case something-special:
-
-	default:
-		resp = Response{
-			Status:  statusCode,
-			Message: message,
-			Data:    val,
-		}
+	req := httptest.NewRequest("GET", "/healthz", nil)
+	resp, _ := api.Test(req)
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		assert.Fail("Failed to read the response from server")
 	}
-
-	if err := c.Status(statusCode).JSON(resp); err != nil {
-		c.Status(500).Send(err)
-	}
+	assert.Contains(strings.ToLower(string(body)), "healthy")
 }

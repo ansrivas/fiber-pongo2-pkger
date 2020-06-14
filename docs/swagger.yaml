@@ -1,0 +1,42 @@
+basePath: /
+definitions:
+  routers.Response:
+    properties:
+      data:
+        type: object
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: fiber@swagger.io
+    name: API Support
+  description: /fiber-pongo2-pkger swagger implementations
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: fiber-pongo2-pkger
+  version: "1.0"
+paths:
+  /healthz:
+    get:
+      description: Get the health status of application
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/routers.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/routers.Response'
+      summary: Get the health status of application
+      tags:
+      - Health
+swagger: "2.0"

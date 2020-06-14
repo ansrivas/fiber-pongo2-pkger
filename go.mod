@@ -3,6 +3,8 @@ module github.com/ansrivas/fiber-pongo2-pkger
 go 1.14
 
 require (
+	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
+	github.com/arsmn/fiber-swagger v1.3.2
 	github.com/common-nighthawk/go-figure v0.0.0-20200609044655-c4b36f998cf2
 	github.com/gofiber/embed v0.1.0
 	github.com/gofiber/fiber v1.11.1
@@ -13,4 +15,5 @@ require (
 	github.com/markbates/pkger v0.17.0
 	github.com/rs/zerolog v1.19.0
 	github.com/stretchr/testify v1.6.1
+	github.com/swaggo/swag v1.6.7
 )
