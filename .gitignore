@@ -16,3 +16,6 @@
 .cover
 fiber-pongo2-pkger
 .profile.cov
+
+vendor
+build

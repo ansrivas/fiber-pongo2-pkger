@@ -10,7 +10,7 @@ LDFLAGS='-extldflags "-static" -s -w -X main.Version=$(VERSION) -X main.BuildTim
 help:          ## Show available options with this Makefile
 	@grep -F -h "##" $(MAKEFILE_LIST) | grep -v grep | awk 'BEGIN { FS = ":.*?##" }; { printf "%-18s  %s\n", $$1,$$2 }'
 
-.PHONY : test crossbuild release build clean
+.PHONY : test crossbuild release build clean generate_swagger package compress vendor
 test:          ## Run all the tests
 	chmod +x ./scripts/test.sh && ./scripts/test.sh
 
@@ -26,6 +26,7 @@ build: vendor
 	CGO_ENABLED=0 GOOS=${GOOS} GOARCH=${GOARCH} go build -o '$(FLAGS)' -a -ldflags $(LDFLAGS)  .
 
 vendor:           ## Go get vendor
+	go mod tidy
 	go mod vendor
 
 crossbuild:
@@ -50,3 +51,26 @@ prof:	bench  ## Run the profiler.
 prof_svg:	clean	bench ## Run the profiler and generate image.
 	@echo "Do you have graphviz installed? sudo apt-get install graphviz."
 	@go tool pprof -svg bench.test cpu.prof > cpu.svg
+
+generate_swagger: ## Generate swagger definitions from the comments
+	go get -u github.com/swaggo/swag/cmd/swag
+	swag init --generalInfo pkg/routers/routers.go pkg/routers
+
+package: ## Package the html, css, js files etc
+	go get -u github.com/markbates/pkger/cmd/pkger
+	pkger -o web -include /web/static/ -include /web/templates/
+
+compress: ### Run upx on the generated binary in `build` directory
+	#echo "=================BEFORE================="
+	du -sh build/${PROJECT_NAME}-linux-amd64
+	upx build/${PROJECT_NAME}-linux-amd64
+	#echo "=================AFTER=================="
+	du -sh build/${PROJECT_NAME}-linux-amd64
+
+
+.PHONY : build_linux_only
+build_linux_only: package generate_swagger vendor ## Helper target to quickly build for linux without creating tar
+	rm -rf build
+	mkdir build
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -v -mod=vendor -trimpath -o "build/${PROJECT_NAME}-linux-amd64" -a -ldflags $(LDFLAGS) .
+	du -sh build/${PROJECT_NAME}-linux-amd64
