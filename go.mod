@@ -17,7 +17,7 @@ require (
 	github.com/klauspost/compress v1.10.9 // indirect
 	github.com/mailru/easyjson v0.7.1 // indirect
 	github.com/markbates/pkger v0.17.0
-	github.com/rs/zerolog v1.19.0
+	github.com/rs/zerolog v1.20.0
 	github.com/stretchr/testify v1.6.1
 	github.com/swaggo/swag v1.6.7
 )
