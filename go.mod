@@ -11,10 +11,9 @@ require (
 	github.com/gobuffalo/here v0.6.2 // indirect
 	github.com/gofiber/embed v0.1.2
 	github.com/gofiber/fiber v1.13.3
-	github.com/gofiber/template v1.5.5
+	github.com/gofiber/template v1.6.2
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
-	github.com/klauspost/compress v1.10.9 // indirect
 	github.com/mailru/easyjson v0.7.1 // indirect
 	github.com/markbates/pkger v0.17.0
 	github.com/rs/zerolog v1.20.0
