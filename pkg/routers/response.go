@@ -21,7 +21,7 @@
 
 package routers
 
-import "github.com/gofiber/fiber"
+import "github.com/gofiber/fiber/v2"
 
 // Response being sent out from the server
 type Response struct {
@@ -31,7 +31,7 @@ type Response struct {
 }
 
 // SendJSON is a wrapper over exisiting json response of fiber
-func SendJSON(c *fiber.Ctx, statusCode int, message string, data interface{}) {
+func SendJSON(c *fiber.Ctx, statusCode int, message string, data interface{}) error {
 
 	var resp interface{}
 	switch val := data.(type) {
@@ -48,6 +48,7 @@ func SendJSON(c *fiber.Ctx, statusCode int, message string, data interface{}) {
 	}
 
 	if err := c.Status(statusCode).JSON(resp); err != nil {
-		c.Status(500).Send(err)
+		return c.Status(500).Send([]byte(err.Error()))
 	}
+	return nil
 }

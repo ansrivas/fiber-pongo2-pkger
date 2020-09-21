@@ -19,3 +19,4 @@ fiber-pongo2-pkger
 
 vendor
 build
+pkged.go

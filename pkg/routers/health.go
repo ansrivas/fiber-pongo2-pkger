@@ -22,7 +22,7 @@
 package routers
 
 import (
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 )
 
 // GetHandlerHealthz godoc
@@ -34,8 +34,7 @@ import (
 // @Failure 500 {object} Response
 // @Router /healthz [get]
 // GetHandlerHealthz returns the health
-func (routers *Routers) GetHandlerHealthz(c *fiber.Ctx) {
+func (routers *Routers) GetHandlerHealthz(c *fiber.Ctx) error {
 	empty := map[string]interface{}{}
-	SendJSON(c, fiber.StatusOK, "Healthy", empty)
-	return
+	return SendJSON(c, fiber.StatusOK, "Healthy", empty)
 }

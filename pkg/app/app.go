@@ -24,9 +24,9 @@ package app
 import (
 	"path"
 
-	"github.com/gofiber/embed"
-	"github.com/gofiber/fiber"
-	"github.com/gofiber/fiber/middleware"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/gofiber/fiber/v2/middleware/recover"
 
 	config "github.com/ansrivas/fiber-pongo2-pkger/internal/config"
 	"github.com/gofiber/template/django"
@@ -102,25 +102,28 @@ func New(configOptions ...ConfigOption) *App {
 		option.setup(ac)
 	}
 
-	// Instantiate a fiber application
-	app := fiber.New()
-
+	var engine *django.Engine
 	// Register the templates directory which is packaged using pkger
 	if ac.htmlTemplateDir != "" {
-		engine := django.NewFileSystem(pkger.Dir(ac.htmlTemplateDir), ".html")
-		app.Settings.Views = engine
+		engine = django.NewFileSystem(pkger.Dir(ac.htmlTemplateDir), ".html")
+
 	}
+
+	// Instantiate a fiber application
+	app := fiber.New(fiber.Config{
+		Views: engine,
+	})
 
 	// Register the static assets like css, js etc
 	if ac.staticAssetDir != "" {
-		staticAsset := embed.New(embed.Config{
+		staticAsset := filesystem.New(filesystem.Config{
 			Root: pkger.Dir(ac.staticAssetDir),
 		})
 		app.Use(prepareRoutes(ac.proxyPrefix, "/static"), staticAsset)
 	}
 
-	// Use default recoverer middleware
-	app.Use(middleware.Recover())
+	// Use default recoverer middleware/recover
+	app.Use(recover.New())
 
 	return &App{
 		Server:   app,

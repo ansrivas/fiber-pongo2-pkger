@@ -58,7 +58,8 @@ generate_swagger: ## Generate swagger definitions from the comments
 
 package: ## Package the html, css, js files etc
 	go get -u github.com/markbates/pkger/cmd/pkger
-	pkger -include /web/static/ -include /web/templates/
+	#pkger -include /web/static/ -include /web/templates/
+	pkger -include github.com/ansrivas/fiber-pongo2-pkger:/web/static/ -include github.com/ansrivas/fiber-pongo2-pkger:/web/templates/
 
 compress: ### Run upx on the generated binary in `build` directory
 	#echo "=================BEFORE================="
@@ -68,9 +69,9 @@ compress: ### Run upx on the generated binary in `build` directory
 	du -sh build/${PROJECT_NAME}-linux-amd64
 
 
-.PHONY : build_linux_only
+.PHONY : build_linux_only vendor generate_swagger package
 build_linux_only: package generate_swagger vendor ## Helper target to quickly build for linux without creating tar
 	rm -rf build
 	mkdir build
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -v -mod=vendor -trimpath -o "build/${PROJECT_NAME}-linux-amd64" -a -ldflags $(LDFLAGS) .
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -v -trimpath -o "build/${PROJECT_NAME}-linux-amd64" -a -ldflags $(LDFLAGS) .
 	du -sh build/${PROJECT_NAME}-linux-amd64

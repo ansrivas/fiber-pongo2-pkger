@@ -21,11 +21,11 @@
 
 package routers
 
-import "github.com/gofiber/fiber"
+import "github.com/gofiber/fiber/v2"
 
 // GetIndexHTML returns the index.html file from pkger
-func (routers *Routers) GetIndexHTML(c *fiber.Ctx) {
-	c.Render("index", map[string]interface{}{
+func (routers *Routers) GetIndexHTML(c *fiber.Ctx) error {
+	return c.Render("index", map[string]interface{}{
 		"name": "Hello, World!",
 	})
 }
