@@ -17,7 +17,7 @@ require (
 	github.com/mailru/easyjson v0.7.6 // indirect
 	github.com/markbates/pkger v0.17.1
 	github.com/prometheus/common v0.13.0 // indirect
-	github.com/rs/zerolog v1.19.0
+	github.com/rs/zerolog v1.20.0
 	github.com/stretchr/testify v1.6.1
 	github.com/swaggo/swag v1.6.7
 	golang.org/x/net v0.0.0-20200904194848-62affa334b73 // indirect
