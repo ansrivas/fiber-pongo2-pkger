@@ -10,7 +10,7 @@ require (
 	github.com/go-openapi/spec v0.19.9 // indirect
 	github.com/go-openapi/swag v0.19.9 // indirect
 	github.com/gobuffalo/here v0.6.2 // indirect
-	github.com/gofiber/fiber/v2 v2.0.3
+	github.com/gofiber/fiber/v2 v2.0.4
 	github.com/gofiber/template v1.5.2
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
@@ -21,6 +21,5 @@ require (
 	github.com/stretchr/testify v1.6.1
 	github.com/swaggo/swag v1.6.7
 	golang.org/x/net v0.0.0-20200904194848-62affa334b73 // indirect
-	golang.org/x/sys v0.0.0-20200918174421-af09f7315aff // indirect
 	golang.org/x/tools v0.0.0-20200918232735-d647fc253266 // indirect
 )
