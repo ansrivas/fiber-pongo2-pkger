@@ -7,8 +7,6 @@ require (
 	github.com/ansrivas/fiberprometheus/v2 v2.0.1
 	github.com/arsmn/fiber-swagger/v2 v2.2.0
 	github.com/common-nighthawk/go-figure v0.0.0-20200609044655-c4b36f998cf2
-	github.com/go-openapi/spec v0.19.9 // indirect
-	github.com/go-openapi/swag v0.19.9 // indirect
 	github.com/gobuffalo/here v0.6.2 // indirect
 	github.com/gofiber/fiber/v2 v2.2.1
 	github.com/gofiber/template v1.6.3
@@ -21,6 +19,5 @@ require (
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/stretchr/objx v0.2.0 // indirect
 	github.com/stretchr/testify v1.6.1
-	github.com/swaggo/swag v1.6.9
-	golang.org/x/tools v0.0.0-20200918232735-d647fc253266 // indirect
+	github.com/swaggo/swag v1.7.0
 )
