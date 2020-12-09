@@ -11,7 +11,7 @@ require (
 	github.com/go-openapi/swag v0.19.9 // indirect
 	github.com/gobuffalo/here v0.6.2 // indirect
 	github.com/gofiber/fiber/v2 v2.2.4
-	github.com/gofiber/template v1.6.3
+	github.com/gofiber/template v1.6.6
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/kr/pty v1.1.5 // indirect
