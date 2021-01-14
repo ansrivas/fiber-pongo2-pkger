@@ -18,6 +18,6 @@ require (
 	github.com/rs/zerolog v1.20.0
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/stretchr/objx v0.2.0 // indirect
-	github.com/stretchr/testify v1.6.1
+	github.com/stretchr/testify v1.7.0
 	github.com/swaggo/swag v1.7.0
 )
