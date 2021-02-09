@@ -49,6 +49,7 @@ github.com/ansrivas/fiberprometheus/v2 v2.0.0 h1:Zi4rtextf0aucoRWJqr5TitCG/wkzJ5
 github.com/ansrivas/fiberprometheus/v2 v2.0.0/go.mod h1:sU3cnY4wKJRr5kFo/zStBMBYt8D5Nc7R/980CzHfGN8=
 github.com/ansrivas/fiberprometheus/v2 v2.0.1/go.mod h1:f4vAzC4nSp3V4FC6SOyXTLl2+/ypTJups4x3KF2+IqQ=
 github.com/ansrivas/fiberprometheus/v2 v2.1.0/go.mod h1:G9GEoiR93y+09EA7UMGdrIbdGbvUccPjJ4OaSFg9HxM=
+github.com/ansrivas/fiberprometheus/v2 v2.1.1/go.mod h1:cgVXfFf4SjxgouMucDA7uuIpTZ79x1CC2tKa1cLkPcM=
 github.com/apache/thrift v0.12.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
 github.com/apache/thrift v0.13.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
 github.com/armon/circbuf v0.0.0-20150827004946-bbbad097214e/go.mod h1:3U/XgcO3hCbHZ8TKRvWD2dDTCfh9M9ya+I9JpbB7O8o=
