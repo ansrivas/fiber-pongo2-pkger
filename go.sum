@@ -122,6 +122,7 @@ github.com/flosch/pongo2 v0.0.0-20200518135938-dfb43dbdc22a h1:8Dw1FO25BORXdlipo
 github.com/flosch/pongo2 v0.0.0-20200518135938-dfb43dbdc22a/go.mod h1:StS3bHLP8nf6A+gzLIW2rrGeSCZrS0DMNTrIEEPRHz0=
 github.com/flosch/pongo2 v0.0.0-20200913210552-0d938eb266f3/go.mod h1:bJWSKrZyQvfTnb2OudyUjurSG4/edverV7n82+K3JiM=
 github.com/flosch/pongo2/v4 v4.0.1/go.mod h1:B5ObFANs/36VwxxlgKpdchIJHMvHB562PW+BWPhwZD8=
+github.com/flosch/pongo2/v4 v4.0.2/go.mod h1:B5ObFANs/36VwxxlgKpdchIJHMvHB562PW+BWPhwZD8=
 github.com/franela/goblin v0.0.0-20200105215937-c9ffbefa60db/go.mod h1:7dvUGVsVBjqR7JHJk0brhHOZYGmfBYOrK0ZhYMEtBr4=
 github.com/franela/goreq v0.0.0-20171204163338-bcd34c9993f8/go.mod h1:ZhphrRTfi2rbfLwlschooIH4+wKKDR4Pdxhh+TRoA20=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
@@ -228,6 +229,7 @@ github.com/gofiber/template v1.5.2/go.mod h1:t31NygWkzborvdc87wkLMIjzpN0btOOygro
 github.com/gofiber/template v1.6.3 h1:Kw/Ynwbt4DxM4vuBQze+a8ZNjm1J5YU5aXNO//9ALW4=
 github.com/gofiber/template v1.6.3/go.mod h1:d2TPzWS4RtCcggpv9DcZ6nykJLNHJODfjotNX5mqSJ8=
 github.com/gofiber/template v1.6.6/go.mod h1:WmzkzTh6QWwrGysWFU8bwNsmHmqRbxHmWZcApIT1ORo=
+github.com/gofiber/template v1.6.7/go.mod h1:jOu6EHGH36OeeVbw14cZE3r7RAQGLNhBG2NieyjsTfk=
 github.com/gofiber/utils v0.0.10 h1:3Mr7X7JdCUo7CWf/i5sajSaDmArEDtti8bM1JUVso2U=
 github.com/gofiber/utils v0.0.10/go.mod h1:9J5aHFUIjq0XfknT4+hdSMG6/jzfaAgCu4HEbWDeBlo=
 github.com/gofiber/utils v0.1.2/go.mod h1:pacRFtghAE3UoknMOUiXh2Io/nLWSUHtQCi/3QASsOc=
