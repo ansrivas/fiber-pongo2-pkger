@@ -5,7 +5,7 @@ go 1.15
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/ansrivas/fiberprometheus/v2 v2.1.1
-	github.com/arsmn/fiber-swagger/v2 v2.3.0
+	github.com/arsmn/fiber-swagger/v2 v2.6.0
 	github.com/common-nighthawk/go-figure v0.0.0-20200609044655-c4b36f998cf2
 	github.com/gobuffalo/here v0.6.2 // indirect
 	github.com/gofiber/fiber/v2 v2.6.0
@@ -13,7 +13,6 @@ require (
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/kr/pty v1.1.5 // indirect
-	github.com/mailru/easyjson v0.7.6 // indirect
 	github.com/markbates/pkger v0.17.1
 	github.com/rs/zerolog v1.20.0
 	github.com/satori/go.uuid v1.2.0 // indirect
