@@ -13,7 +13,7 @@ require (
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/markbates/pkger v0.17.1
-	github.com/rs/zerolog v1.20.0
+	github.com/rs/zerolog v1.21.0
 	github.com/stretchr/testify v1.7.0
 	github.com/swaggo/swag v1.7.0
 )
