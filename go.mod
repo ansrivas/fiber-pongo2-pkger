@@ -10,7 +10,7 @@ require (
 	github.com/go-openapi/spec v0.20.3 // indirect
 	github.com/gobuffalo/here v0.6.2 // indirect
 	github.com/gofiber/fiber/v2 v2.14.0
-	github.com/gofiber/template v1.6.12
+	github.com/gofiber/template v1.6.13
 	github.com/joho/godotenv v1.3.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/mailru/easyjson v0.7.7 // indirect
