@@ -5,7 +5,7 @@ go 1.15
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/ansrivas/fiberprometheus/v2 v2.1.2
-	github.com/arsmn/fiber-swagger/v2 v2.15.0
+	github.com/arsmn/fiber-swagger/v2 v2.17.0
 	github.com/common-nighthawk/go-figure v0.0.0-20200609044655-c4b36f998cf2
 	github.com/gobuffalo/here v0.6.2 // indirect
 	github.com/gofiber/fiber/v2 v2.17.0
