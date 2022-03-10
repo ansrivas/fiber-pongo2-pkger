@@ -170,8 +170,8 @@ github.com/gofiber/fiber/v2 v2.24.0/go.mod h1:MR1usVH3JHYRyQwMe2eZXRSZHRX38fkV+A
 github.com/gofiber/fiber/v2 v2.28.0/go.mod h1:0bPXdTu+jRqINrEq1T6mHeVBnE0lQd67PGu35jD3hLk=
 github.com/gofiber/fiber/v2 v2.29.0 h1:wopU1kXxdD9XxvQqYd1vSWMGu2PiZN0yy+DojygTRRA=
 github.com/gofiber/fiber/v2 v2.29.0/go.mod h1:1Ega6O199a3Y7yDGuM9FyXDPYQfv+7/y48wl6WCwUF4=
-github.com/gofiber/template v1.6.24 h1:FGSjH36IykjhCkPkh96jQj7FGpV/55IEqAAP7rlWM80=
-github.com/gofiber/template v1.6.24/go.mod h1:mUuurm5QODAS92Y3N588JOozN5MrGaF9pZ4N5biQxns=
+github.com/gofiber/template v1.6.25 h1:wAh92yCfP2XQvxBRK8VchbjAJnNz/y+p4uD94WBs1MI=
+github.com/gofiber/template v1.6.25/go.mod h1:/hE+mSK1VTEK9YVX1ySE2ix12xOXdgi28nrsVaRq2u4=
 github.com/gofiber/utils v0.1.2 h1:1SH2YEz4RlNS0tJlMJ0bGwO0JkqPqvq6TbHK9tXZKtk=
 github.com/gofiber/utils v0.1.2/go.mod h1:pacRFtghAE3UoknMOUiXh2Io/nLWSUHtQCi/3QASsOc=
 github.com/gogo/protobuf v1.1.1/go.mod h1:r8qH/GZQm5c6nD/R0oafs1akxWv10x8SbQlK7atdtwQ=
