@@ -5,16 +5,16 @@ go 1.17
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/ansrivas/fiberprometheus/v2 v2.2.0
-	github.com/arsmn/fiber-swagger/v2 v2.24.0
+	github.com/arsmn/fiber-swagger/v2 v2.31.0
 	github.com/common-nighthawk/go-figure v0.0.0-20200609044655-c4b36f998cf2
-	github.com/gofiber/fiber/v2 v2.30.0
+	github.com/gofiber/fiber/v2 v2.31.0
 	github.com/gofiber/template v1.6.26
 	github.com/joho/godotenv v1.4.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/markbates/pkger v0.17.1
 	github.com/rs/zerolog v1.26.1
 	github.com/stretchr/testify v1.7.1
-	github.com/swaggo/swag v1.8.0
+	github.com/swaggo/swag v1.8.1
 )
 
 require (
