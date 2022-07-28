@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
-	github.com/ansrivas/fiberprometheus/v2 v2.2.0
+	github.com/ansrivas/fiberprometheus/v2 v2.3.0
 	github.com/arsmn/fiber-swagger/v2 v2.31.1
 	github.com/common-nighthawk/go-figure v0.0.0-20200609044655-c4b36f998cf2
 	github.com/gofiber/fiber/v2 v2.35.0
@@ -31,7 +31,7 @@ require (
 	github.com/go-openapi/spec v0.20.4 // indirect
 	github.com/go-openapi/swag v0.19.15 // indirect
 	github.com/gobuffalo/here v0.6.2 // indirect
-	github.com/gofiber/adaptor/v2 v2.1.19 // indirect
+	github.com/gofiber/adaptor/v2 v2.1.23 // indirect
 	github.com/gofiber/utils v0.1.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
@@ -41,7 +41,7 @@ require (
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/prometheus/client_golang v1.12.1 // indirect
+	github.com/prometheus/client_golang v1.12.2 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.32.1 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
