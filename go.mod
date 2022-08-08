@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
-	github.com/ansrivas/fiberprometheus/v2 v2.3.0
+	github.com/ansrivas/fiberprometheus/v2 v2.4.0
 	github.com/arsmn/fiber-swagger/v2 v2.31.1
 	github.com/common-nighthawk/go-figure v0.0.0-20200609044655-c4b36f998cf2
 	github.com/gofiber/fiber/v2 v2.36.0
