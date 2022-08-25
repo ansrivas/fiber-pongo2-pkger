@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
-	github.com/ansrivas/fiberprometheus/v2 v2.4.0
+	github.com/ansrivas/fiberprometheus/v2 v2.4.1
 	github.com/arsmn/fiber-swagger/v2 v2.31.1
 	github.com/common-nighthawk/go-figure v0.0.0-20200609044655-c4b36f998cf2
 	github.com/gofiber/fiber/v2 v2.36.0
@@ -31,8 +31,7 @@ require (
 	github.com/go-openapi/spec v0.20.4 // indirect
 	github.com/go-openapi/swag v0.19.15 // indirect
 	github.com/gobuffalo/here v0.6.2 // indirect
-	github.com/gofiber/adaptor/v2 v2.1.23 // indirect
-	github.com/gofiber/utils v0.1.2 // indirect
+	github.com/gofiber/adaptor/v2 v2.1.25 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/klauspost/compress v1.15.0 // indirect
